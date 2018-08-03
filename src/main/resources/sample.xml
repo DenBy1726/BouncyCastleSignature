@@ -1,0 +1,46 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       SOAP-ENV:mustUnderstand="1">
+            <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:SignedInfo>
+                    <ds:CanonicalizationMethod
+                            Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+                    <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                    <ds:Reference URI="#48c87681-3876-4202-a97d-e993a85e396f">
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                        <ds:DigestValue>LNhGgwANI7HTpkr8sqHefYEW3NM=</ds:DigestValue>
+                    </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue>ByyCEF7Yse93GcSO62mkaWw/Fr86PtYYzlp7cXdfo4gp7WMtQhQx0LeiktJx2JTw+6M+ooWGk7ul
+                    ndPzxPNrjc24yPCu60BN4WHcJR+BRqD7LeOYVjn7oI9AcRTevnQC+SzL+oeFFoMNjJu8H5MZf8jy
+                    cvpJFMf5gwHftz95sWcee/IvG0UfabF4im0LCfiZ+YxzUqufnuneTLd25SvSJaMmH0YGmAC+PRU3
+                    BbGrKvri/Il0gRQvblC+MWghmaf3XyQP4RPqnC7XLcl6fHO6aHkWI49ZKBAtS7Eeoa5sJk3YW4q6
+                    6ePzMNgTQBPA6veRYuZGAFUoQCS8U/HFdsYsyQ==
+                </ds:SignatureValue>
+                <ds:KeyInfo>
+                    <ds:KeyValue>
+                        <ds:RSAKeyValue>
+                            <ds:Modulus>g7VuWVCZZZNP0a+KShSaJIUFSfQyi9bJbg4x902cKXAGLdb7oOfPfoq4zBsOJpU0GLo252auJpND
+                                I0/3I4cOnpIRioShH56vLmf8OQKcU8sZsVMHyD4sV1tMky+X+ytkyxJJAfVTHD2B0rSBB7DDCw1s
+                                c5SwE0YPurGzSiu6L1siwACCF9/NxVo9Gkk/rbafyGzRP84iJRB2Km4cNAzQt1m5jRZeq433llRP
+                                izc2S1OHxjolRrZSbC4r1cgoMelcWjWjjYGlF3O42MVz9/JOSfdjPW7/vM5f7hi1T43QRsnEFm+w
+                                jWN914CDJUwlV+tkBQctcy3DTGOc3hwdlRP9Ww==
+                            </ds:Modulus>
+                            <ds:Exponent>AQAB</ds:Exponent>
+                        </ds:RSAKeyValue>
+                    </ds:KeyValue>
+                    <ds:X509IssuerSerial>
+                        <ds:X509IssuerName>CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown
+                        </ds:X509IssuerName>
+                        <ds:X509SerialNumber>1234</ds:X509SerialNumber>
+                    </ds:X509IssuerSerial>
+                </ds:KeyInfo>
+            </ds:Signature>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body xmlns:ds="http://schemas.xmlsoap.org/soap/security/2000-12"
+                   ds:id="48c87681-3876-4202-a97d-e993a85e396f">
+        <root-element>Hello world</root-element>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
